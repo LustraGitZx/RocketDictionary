@@ -1,0 +1,15 @@
+{
+    "name": "Rocket Pronunciation",
+    "short_name": "Rocket",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2B2A32",
+    "theme_color": "#2B2A32",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+          "src": "images/logo.svg",
+          "sizes": "any"
+        }
+    ]
+  }

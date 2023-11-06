@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, interactive-widget=resizes-content, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <title>Rocket Pronunciation</title> 
+</head>
+<body>
+    <section class="content" id="content">
+        <div class="word" id="word">HUMMINGBIRD</div>
+        <div class="transcription" id="transcription">hʌ́mɪŋbəːd</div>
+    </section>
+    
+    <div class="button" id="button" onclick="document.getElementById('search').focus()">
+        <img src="images/rocket.svg" alt="">
+        <img src="images/rocket-text.svg" alt="">
+    </div>
+
+    <input type="search" class="search search-hidden" id="search" maxlength="20" onkeydown="send_request(this)" onfocus="input_mode(this)" onblur="exit_input_mode(this)">
+    <div class="search-loader" id="search-loader" onclick="exit_search_mode()">
+        <div class="lds-dual-ring"></div>
+        <img src="images/rocket.svg" class="loader-rocket" alt="">
+        <img src="images/rocket-text.svg" class="loader-text" alt="">
+    </div>
+
+</body>
+</html>
