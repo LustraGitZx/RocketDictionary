@@ -13,3 +13,6 @@ The algorithm is simple:
    2. Else server makes a request to Oxford dictionary
       1. If the word exist in Oxford Dictionary it translates to SSBE transcriptio and adds to local dictionary
       2. Else server return "The word doesn't exist" answer
+
+## Check the new version out 
+https://github.com/LustraGitZx/HummingBird/tree/master
